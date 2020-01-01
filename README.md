@@ -2,6 +2,8 @@
 
 Getting the domain name from an URL (in PHP) seems to be a trivial task at first, but after further consideration you start to see the fine print. Because top level domains (TLDs) can have an arbitrary amount of words (for example there is .com, .co.uk., .lib.ca.us, and so on), it’s not possible to tell where the domain name ends and the TLD begins, without having a full list of all TLDs. Fortunately the Mozilla foundation has compiled and published such a list [here](https://publicsuffix.org/list/effective_tld_names.dat), under the [Mozilla Public License v 2.0](https://www.mozilla.org/en-US/MPL/2.0/). 
 
+You can use the list together with this code:
+
 ```php
 <?php
     function get_hostname_from_url($url)
